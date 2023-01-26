@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manjari', sans-serif;
+    background-color: #f1f1f1;
+    line-height: 1.7;
+    color: #000;
+    font-size: 0.9rem;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	align-items: baseline;
+	gap: 1rem;
+	background-color: #a2cbc1;
+	padding: 1rem;
+	color:#051441;
+}
+
+.content {
+	display: flex;
+	flex-direction: row;
+	margin: 2rem;
+	gap: 2rem;
+}
+
+.filters {
+	display: flex;
+	flex-direction: column;
+	min-width: 25%;
+	background-color:#f4d7cd;
+	padding: 1rem;
+	gap: 1rem;
+	border-radius: 0.3rem;
+}
+
+.filters .filters-header {
+	display: flex;
+	flex-direction: row;
+	color:#bc4663;
+	font-size: 1.2rem;
+	gap: 0.5rem;
+}
+
+.filters .section-title{
+	font-size: 1rem;
+}
+
+.filters .filter-item {
+	font-size: 0.9rem;
+}
+
+.document-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.document-list h2 {
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.document-list .document {
+    background-color: #fff;
+    padding: 2rem;
+    border: solid 1px #ccd0d4;
+    border-radius: 0.3rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .04);
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 45%;
+    gap: 1rem;
+}
+.document-list .document .inner-column{
+	display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+.document .title{
+	font-size: 1.3rem;
+	color: #0e6688;
+	font-weight: 700;
+}
+.document .authors{
+	font-size: 1.1rem;
+	color: #0e6688;
+	font-weight: 400;
+}
+
+.document .snippet {
+	font-size: 1rem ;
+}
+
+.document .topics {
+	font-size: 0.9rem ;
+	color: #0e6688;
+}
+
+.document img {
+	width: 10rem;
+	height: auto;
+	-webkit-box-shadow: 15px 15px 15px -10px rgba(125,125,125,1);
+	-moz-box-shadow: 15px 15px 15px -10px rgba(125,125,125,1);
+	box-shadow: 15px 15px 15px -10px rgba(125,125,125,1);
+}
+
+.document .more {
+	display:none;
+}
+
+.document .more-button {
+	padding: 0.5rem;
+	border-radius: 1rem;
+	color: grey;
+	border: solid 1px grey;
+}
+.document .more-button:hover {
+	background-color: #0e6688;
+	border: 1px solid transparent;
+	color: white;
+}
+
+@media(max-width:560px) {
+    .document-list {
+        display: flex;
+        flex-direction: column;
+
+    }
+}

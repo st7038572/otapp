@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air quality app</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manjari">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<img src="images/overton-text-white-small.png" alt="Overton">
+			<h2>Air quality research app</h2>
+		</div>
+		<div class="content">
+			<div class="document-list">
+		    </div>
+		    <div class="filters">
+		    	<div class="filters-header">
+		    		<span class="material-symbols-outlined">filter_alt</span>
+					<div>Search filters</div>
+		    	</div>
+		    	<div class="filter-section">
+		    		<div class="section-title">
+		    			Authors
+		    		</div>
+		    		<div class="options-container">
+		    			<div class="filter-item">
+		    				<input type="checkbox" id="HS2" name="High Speed Two (HS2) Limited">
+      						<label for="HS2">High Speed Two (HS2) Limited</label>
+		    			</div>
+		    			<div class="filter-item">
+		    				<input type="checkbox" id="deptEnv" name="Department for Environment, Food & Rural Affairs">
+      						<label for="deptEnv">Department for Environment, Food & Rural Affairs</label>
+		    			</div>
+		    			<div class="filter-item">
+		    				<input type="checkbox" id="EA" name="Environment Agency">
+      						<label for="EA">Environment Agency</label>
+		    			</div>
+		    			<div class="filter-item">
+		    				<input type="checkbox" id="PHE" name="Public Health England">
+      						<label for="HPE">Public Health England</label>
+		    			</div>
+		    			<div class="filter-item">
+		    				<input type="checkbox" id="DfT" name="Department for Transport">
+      						<label for="DfT">Department for Transport</label>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div class="filter-section">
+		    		<div class="section-title">
+		    			Published year
+		    		</div>
+		    		<div class="options-container">
+		    			<div class="filter-item">
+		    				<input type="checkbox" id="2023" name="2023">
+      						<label for="2023">2023</label>
+		    			</div>
+		    			<div class="filter-item">
+		    				<input type="checkbox" id="2022" name="2022">
+      						<label for="2022">2022</label>
+		    			</div>
+		    			<div class="filter-item">
+		    				<input type="checkbox" id="2021" name="2021">
+      						<label for="2021">2021</label>
+		    			</div>
+		    			<div class="filter-item">
+		    				<input type="checkbox" id="2020" name="2020">
+      						<label for="2020">2020</label>
+		    			</div>
+		    			<div class="filter-item">
+		    				<input type="checkbox" id="2019" name="2019">
+      						<label for="2019">2019</label>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div class="filter-section">
+		    		<div class="section-title">
+		    			Topics
+		    		</div>
+		    		<div class="options-container">
+		    			<div class="filter-item">
+		    				<input type="checkbox" id="Snowhill" name="Snowhill">
+      						<label for="Snowhill">Snowhill</label>
+		    			</div>
+		    			<div class="filter-item">
+		    				<input type="checkbox" id="highSpeed2" name="High Speed 2">
+      						<label for="highSpeed2">High Speed 2</label>
+		    			</div>
+		    			<div class="filter-item">
+		    				<input type="checkbox" id="OpenStreetMap" name="OpenStreetMap">
+      						<label for="OpenStreetMap">OpenStreetMap</label>
+		    			</div>
+		    			<div class="filter-item">
+		    				<input type="checkbox" id="Cowley" name="Cowley, London">
+      						<label for="Cowley">Cowley, London</label>
+		    			</div>
+		    			<div class="filter-item">
+		    				<input type="checkbox" id="ordnanceSurvey" name="Ordnance Survey">
+      						<label for="ordnanceSurvey">Ordnance Survey</label>
+		    			</div>
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+	    
+	</div>
+    <script src="js/app.js"></script>
+</body>
+</html>
